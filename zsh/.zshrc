@@ -2,18 +2,9 @@
 export ZSH=$HOME/.oh-my-zsh
 export TMPDIR=/tmp
 
-# If we're in x, use a nicer prompt.
-if [[ -n "$DISPLAY" ]]; then
-  ZSH_THEME="robbyrussell"
-	DEFAULT_USER="eric"
-	xseticon -id "$WINDOWID" /home/eric/.terminal.png
-  alias v="nvim"
-  alias vim="nvim"
-else
-	ZSH_THEME="flazz"
-	alias v='nvim -c "colorscheme default"'
-	alias vim='nvim -c "colorscheme default"'
-fi
+ZSH_THEME='dieter'
+alias v='nvim'
+alias vim='nvim'
 
 alias sudo='sudo '
 alias m='make'
@@ -27,13 +18,11 @@ alias spu='sudo pacman -Syu && cd /tmp && cower -u'
 # turn off <c-s> locking my shit
 stty -ixon
 
-zstyle :omz:plugins:ssh-agent identities
-
 # add noop to vim cmd mode
 noop() { }
 zle -N noop
 bindkey -M vicmd '\e' noop
-plugins=(git git-extras vi-mode ssh-agent)
+plugins=(git git-extras vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 

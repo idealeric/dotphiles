@@ -24,10 +24,14 @@ alias fucking='sudo'
 alias sp='sudo pacman'
 alias spu='sudo pacman -Syu && cd /tmp && cower -u'
 
+alias shootest='~/Code/shoobx.app/bin/test -pvc --all -t'
+alias shoorender='~/Code/shoobx.app/bin/sbt2pdf'
+alias shoohome='cd ~/Code/shoobx.app/'
+
 # turn off <c-s> locking my shit
 stty -ixon
 
-zstyle :omz:plugins:ssh-agent identities
+zstyle :omz:plugins:ssh-agent identities id_shoobx
 
 # add noop to vim cmd mode
 noop() { }
@@ -90,3 +94,6 @@ status() {
 permdisable() {
 	sudo systemctl disable $1.service
 }
+
+toilet -f pagga --gay Shoobx
+shoohome

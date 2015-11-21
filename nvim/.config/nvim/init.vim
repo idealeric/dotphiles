@@ -82,6 +82,7 @@ filetype plugin indent on
 " General Custom Keybinding Settings {{{
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
+let @d="oimport ipdb; ipdb.set_trace()\<Esc>^"
 nmap <leader>w :w<cr>
 map <F1> <Esc>
 imap <F1> <Esc>
@@ -116,6 +117,7 @@ let g:hybrid_use_Xresources = 1
 set background=dark
 colorscheme hybrid
 syntax enable
+au BufRead,BufNewFile *.zcml setfiletype xml
 " }}}
 " Ag Settings {{{
 nmap <leader>s :Ag!<space>

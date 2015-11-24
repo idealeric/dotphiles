@@ -15,6 +15,7 @@ else
 	alias vim='nvim -c "colorscheme default"'
 fi
 
+alias sudo='sudo '
 alias m='make'
 alias e='exit'
 alias lsa='ls -lA'

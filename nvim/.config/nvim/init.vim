@@ -57,6 +57,7 @@ augroup END
 set rtp+=~/.config/nvim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.config/nvim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'

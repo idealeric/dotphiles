@@ -40,6 +40,8 @@ source $ZSH/oh-my-zsh.sh
 alias gcop='gco -p'
 alias gap='ga -p'
 alias glog='tig'
+alias gcf='gc --fixup'
+alias gcaf='gca --fixup'
 
 # User configuration
 HISTSIZE=1600

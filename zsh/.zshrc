@@ -95,5 +95,7 @@ permdisable() {
 	sudo systemctl disable $1.service
 }
 
-toilet -f pagga --gay Shoobx
-shoohome
+if [[ -n "$DISPLAY" ]]; then
+  toilet -f pagga --gay Shoobx
+  shoohome
+fi
